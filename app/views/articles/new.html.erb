@@ -1,32 +1,5 @@
 <h1>Create an article</h1>
 
-<%= form_for @article do |f| %>
-  <p>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.label :reading_time %><br>
-    <%= f.text_field :reading_time %>
-  </p>
-  <p>
-   <%= f.submit %>
-  </p>
-<% end %>
+<%= render 'form' %>
 
-<% if @article.errors.any? %>
-  <h2>Les erreurs suivantes ont empêchées l'article d'être sauvegardé :</h2>
-  <ul>
-    <% @article.errors.full_messages.each do |msg|%>
-      <li><%= msg %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-<p>
-  <%= link_to 'Back', articles_path %>
-</p>
+<%= link_to 'Back', articles_path %>
