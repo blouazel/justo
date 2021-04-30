@@ -32,6 +32,10 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def index
+    @article = Article.all
+  end
+
   private
 
   def article_params
