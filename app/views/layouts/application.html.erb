@@ -12,11 +12,18 @@
   </head>
 
   <body>
+    <!-- messages d'erreurs liés à devise -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
+
+    <!-- messages d'erreurs liés aux articles -->
     <% flash.each do |name, msg| %>
       <ul>
         <li><%= msg %></li>
       </ul>
     <% end %>
+
   </body>
 </html>
