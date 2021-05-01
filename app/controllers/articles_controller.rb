@@ -44,7 +44,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :description, :reading_time)
+    params.require(:article).permit(:title, :description, :reading_time, :category)
   end
 
   def set_article
