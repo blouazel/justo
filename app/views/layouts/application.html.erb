@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Justo</title>
+    <title>just-o-naturel : naturopathe à Epernon</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,9 @@
   </head>
 
   <body>
+    <!-- navbar sur toutes les pages -->
+    <% render 'shared/navbar' %>
+
     <!-- messages d'erreurs liés à devise -->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
